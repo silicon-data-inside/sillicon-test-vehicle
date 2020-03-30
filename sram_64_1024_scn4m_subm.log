@@ -1,0 +1,252 @@
+[globals/init_openram]: Initializing OpenRAM...
+[globals/setup_paths]: Temporary files saved in /tmp/openram_jindo_952_temp/
+[globals/read_config]: Configuration file is /home/jindo/lGit/OpenRAM/compiler/example_configs/giant_config_scn4m_subm.py
+[globals/read_config]: Output saved in /home/jindo/lGit/OpenRAM/compiler/temp/
+[globals/import_tech]: Adding technology path: /home/jindo/lGit/OpenRAM/technology
+[globals/init_paths]: Creating temp directory: /tmp/openram_jindo_952_temp/
+[verify/<module>]: Initializing verify...
+[verify/<module>]: LVS/DRC/PEX disabled.
+[characterizer/<module>]: Initializing characterizer...
+[characterizer/<module>]: Analytical model enabled.
+[globals/setup_bitcell]: Using bitcell: bitcell
+|==============================================================================|
+|=========                       OpenRAM v1.1.4                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========           Temp dir: /tmp/openram_jindo_952_temp/           =========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 03/29/2020 17:51:59
+Technology: scn4m_subm
+Total size: 65536 bits
+WARNING: file globals.py: line 562: Requesting such a large memory size (65536) will have a large run-time. Consider using multiple smaller banks.
+
+Word size: 64
+Words: 1024
+Banks: 1
+Write size: None
+RW ports: 1
+R-only ports: 0
+W-only ports: 0
+Design supply routing skipped. Supplies will have multiple must-connect pins. (route_supplies=True to enable supply routing).
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+[sram_config/recompute_sizes]: Recomputing with words per row: 4
+[sram_config/recompute_sizes]: Rows: 256 Cols: 256
+[sram_config/recompute_sizes]: Row addr size: 8 Col addr size: 2 Bank addr size: 10
+Words per row: 4
+Output files are: 
+/home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.sp
+/home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.v
+/home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.lib
+/home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.py
+/home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.html
+/home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.log
+/home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.lef
+/home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.gds
+[dff_array/__init__]: Creating row_addr_dff rows=8 cols=1
+[dff_array/__init__]: Creating col_addr_dff rows=1 cols=2
+[dff_array/__init__]: Creating data_dff rows=1 cols=64
+[precharge_array/__init__]: Creating precharge_array_0
+[sense_amp_array/__init__]: Creating sense_amp_array_0
+[single_level_column_mux_array/__init__]: Creating single_level_column_mux_array_0
+[write_driver_array/__init__]: Creating write_driver_array_0
+[wordline_driver/__init__]: Creating wordline_driver_0
+[pdriver/__init__]: creating pdriver pdriver_0
+[replica_bitcell_array/__init__]: Creating replica_bitcell_array_0 256 x 256
+[bitcell_base_array/__init__]: Creating bitcell_array_0 256 x 256
+[bitcell_base_array/__init__]: Creating dummy_array_0 1 x 256
+[bitcell_base_array/__init__]: Creating dummy_array_1 259 x 1
+[bitcell_base_array/__init__]: Creating dummy_array_2 259 x 1
+[control_logic/__init__]: Creating control_logic_rw
+[dff_buf/__init__]: Creating dff_buf
+[dff_buf_array/__init__]: Creating dff_buf_array_0
+[dff_buf/__init__]: Creating dff_buf_0
+[pand2/__init__]: Creating pnand2 pand2_0
+[pdriver/__init__]: creating pdriver pdriver_1
+[pbuf/__init__]: creating pbuf_0 with size of 256
+[pdriver/__init__]: creating pdriver pdriver_2
+[pdriver/__init__]: creating pdriver pdriver_3
+[pand3/__init__]: Creating pand3 pand3_0
+[pand3/__init__]: Creating pand3 pand3_1
+[delay_chain/__init__]: creating delay chain [4, 4, 4, 4, 4, 4, 4, 4, 4]
+** Submodules: 281.0 seconds
+** Placement: 0.0 seconds
+** Routing: 44.2 seconds
+** Verification: 0.0 seconds
+** SRAM creation: 329.3 seconds
+LEF: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.lef
+** LEF: 389.0 seconds
+GDS: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.gds
+** GDS: 97.8 seconds
+SP: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.sp
+** Spice writing: 1.0 seconds
+LIB: Characterizing... 
+[characterizer.lib/prepare_tables]: Loads: [ 2.45605  9.8242  78.5936 ]
+[characterizer.lib/prepare_tables]: Slews: [0.0125 0.05   0.4   ]
+[characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 5.0, 25), ('SS', 5.0, 25), ('FF', 5.0, 25)]
+[characterizer.lib/characterize_corners]: Corner: ('TT', 5.0, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm_TT_5p0V_25C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 661.2485447279001 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.068314 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 2.45605, 2.2966183176402586, 0.006179820369407407
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 9.8242, 2.314667228722481, 0.00798471147762963
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 78.5936, 2.483123732156555, 0.024830361821037036
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 2.45605, 2.2966183176402586, 0.006179820369407407
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 9.8242, 2.314667228722481, 0.00798471147762963
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 78.5936, 2.483123732156555, 0.024830361821037036
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 2.45605, 2.2966183176402586, 0.006179820369407407
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 9.8242, 2.314667228722481, 0.00798471147762963
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 78.5936, 2.483123732156555, 0.024830361821037036
+[characterizer.lib/characterize_corners]: Corner: ('SS', 5.0, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm_SS_5p0V_25C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 601.1350406617286 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.068314 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 2.45605, 2.526280149404285, 0.006797802406348149
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 9.8242, 2.5461339515947294, 0.008783182625392592
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 78.5936, 2.7314361053722105, 0.027313398003140744
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 2.45605, 2.526280149404285, 0.006797802406348149
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 9.8242, 2.5461339515947294, 0.008783182625392592
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 78.5936, 2.7314361053722105, 0.027313398003140744
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 2.45605, 2.526280149404285, 0.006797802406348149
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 9.8242, 2.5461339515947294, 0.008783182625392592
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 78.5936, 2.7314361053722105, 0.027313398003140744
+[characterizer.lib/characterize_corners]: Corner: ('FF', 5.0, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm_FF_5p0V_25C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 734.7206052532222 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.068314 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 2.45605, 2.0669564858762333, 0.0055618383324666665
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 9.8242, 2.083200505850233, 0.007186240329866667
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.0125, 78.5936, 2.2348113589408998, 0.022347325638933335
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 2.45605, 2.0669564858762333, 0.0055618383324666665
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 9.8242, 2.083200505850233, 0.007186240329866667
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.05, 78.5936, 2.2348113589408998, 0.022347325638933335
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 2.45605, 2.0669564858762333, 0.0055618383324666665
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 9.8242, 2.083200505850233, 0.007186240329866667
+WARNING: file hierarchy_spice.py: line 325: Design Class ptx logical effort function needs to be defined
+
+WARNING: file hierarchy_spice.py: line 328: Class ptx name nmos_m1_w6_400
+
+[characterizer.delay/analytical_delay]: 0.4, 78.5936, 2.2348113589408998, 0.022347325638933335
+** Characterization: 65.5 seconds
+Config: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.py
+** Config: 0.0 seconds
+Datasheet: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.html
+** Datasheet: 0.2 seconds
+Verilog: Writing to /home/jindo/lGit/OpenRAM/compiler/temp/sram_64_1024_scn4m_subm.v
+** Verilog: 0.0 seconds
+[globals/cleanup_paths]: Purging temp directory: /tmp/openram_jindo_952_temp/
+** End: 883.0 seconds
